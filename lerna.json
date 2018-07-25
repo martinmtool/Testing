@@ -3,10 +3,10 @@
   "packages": [
     "packages/*"
   ],
-  "npmClient": "yarn",
+  "npmClient": "npm",
   "npmClientArgs": [
     "--userconfig",
     "~/.npmrc-private"
   ],
-  "version": "0.0.1"
+  "version": "2.0.3"
 }

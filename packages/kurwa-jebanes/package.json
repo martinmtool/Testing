@@ -1,11 +1,10 @@
 {
-  "name": "b",
+  "name": "kurwa-jebanes",
   "version": "2.0.3",
-  "private": true,
-  "main": "dist/AppB.js",
+  "private": false,
   "dependencies": {
     "autoprefixer": "7.1.6",
-    "babel-cli": "^6.26.0",
+    "b": "^2.0.3",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
@@ -49,8 +48,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
-    "transpile": "babel src -d dist --copy-files"
+    "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
     "collectCoverageFrom": [
