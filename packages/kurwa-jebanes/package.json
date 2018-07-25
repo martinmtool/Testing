@@ -1,10 +1,10 @@
 {
   "name": "kurwa-jebanes",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "private": false,
   "dependencies": {
     "autoprefixer": "7.1.6",
-    "b": "^2.0.3",
+    "b": "^2.0.4",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
