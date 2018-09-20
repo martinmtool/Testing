@@ -1,9 +1,11 @@
 {
-	"env": {
-		"node": true
-	},
-	"rules": {
-		"node/exports-style": ["off"]
-	}
-
+  "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+  }
+  "extends": "react-app"
 }
+
