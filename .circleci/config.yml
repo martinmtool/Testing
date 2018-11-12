@@ -37,4 +37,8 @@ jobs:
       - run: yarn test
 
 
+            for folder in `git log --format="" --name-only ${CIRCLE_COMPARE_URL##http*/} | cut -d"/" -f1 | sort -u`; do
+             echo "contents in $folder were modified"
+             #this would be a call to specific testing, etc on changed directory
+          done
 
