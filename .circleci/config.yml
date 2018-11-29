@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.10
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # - run: echo "yarn global add mocha eslint" >> $BASH_ENV
+      - run: 
+          name: Run test/lint
+          command: 
+            for dir in $(git log --name-only --oneline -1 | sed 1d | grep '/' | cut -d "/" -f1 | sed '/^\.circleci$/d' | sort -u); 
+              do 
+                cd $dir;
+                yarn;
+                yarn test;
+                cd ..;
+              done
+
